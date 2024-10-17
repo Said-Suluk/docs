@@ -33,9 +33,7 @@ Find the first element that satisfies the condition:
 ```js
 const cats = ['Kiki', 'Leo', 'Milo', 'Cleo', 'Lily', 'Luna'];
 
-const findLily = cats.findIndex((cat) => {
-  return cat == 'Lily';
-});
+const findLily = cats.findIndex((cat) => cat === 'Lily');
 
 console.log(findLily);
 // Output: 4
@@ -46,9 +44,7 @@ If no element satisfies the condition, the result will be `-1`:
 ```js
 const cats = ['Kiki', 'Leo', 'Milo', 'Cleo', 'Luna'];
 
-const findLily = cats.findIndex((cat) => {
-  return cat == 'Lily';
-});
+const findLily = cats.findIndex((cat) => cat === 'Lily');
 
 console.log(findLily);
 // Output: -1
